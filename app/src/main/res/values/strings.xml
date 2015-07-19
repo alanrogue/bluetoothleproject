@@ -1,6 +1,9 @@
 <resources>
-    <string name="app_name">bluetoothleproject</string>
+    <string name="app_name">Heart Rate Measurement</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="HRM_SET_UP">HRM Set Up</string>
+    <string name="Emergency_Help">Emergency</string>
+
 </resources>
