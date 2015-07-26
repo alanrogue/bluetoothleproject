@@ -18,9 +18,16 @@ public class btlemain extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_btlemain);
 
-        mBtnHRMSetup = (Button)findViewById(R.id.btnSetup);
+        BLEMain_findViewByID();
+        BLEMain_SetBtnClickListener();
+    }
 
+    private void BLEMain_SetBtnClickListener()  {
         mBtnHRMSetup.setOnClickListener(btnHRMSetupOnClick);
+    }
+
+    private void BLEMain_findViewByID() {
+        mBtnHRMSetup = (Button)findViewById(R.id.btnSetup);
     }
 
     private View.OnClickListener btnHRMSetupOnClick = new View.OnClickListener() {

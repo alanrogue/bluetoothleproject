@@ -15,11 +15,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtHeight"
-        android:layout_toStartOf="@+id/edtWeight"
         android:layout_alignParentTop="true"
         android:gravity="center_vertical"
         android:layout_alignTop="@+id/edtHeight"
-        android:layout_alignBottom="@+id/edtHeight" />
+        android:layout_alignBottom="@+id/edtHeight"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -39,8 +39,8 @@
         android:id="@+id/txtWeight"
         android:gravity="center_vertical"
         android:layout_alignTop="@+id/edtWeight"
-        android:layout_alignStart="@+id/txtHeight"
-        android:layout_alignBottom="@+id/edtWeight" />
+        android:layout_alignBottom="@+id/edtWeight"
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -61,10 +61,10 @@
         android:text="@string/gender"
         android:id="@+id/txtSex"
         android:textSize="20sp"
-        android:layout_alignStart="@+id/txtWeight"
-        android:layout_alignBottom="@+id/radGrpGender"
         android:gravity="center_vertical"
-        android:layout_alignTop="@+id/radGrpGender" />
+        android:layout_alignTop="@+id/radGrpGender"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/txtAge" />
 
     <RadioGroup
         android:id="@+id/radGrpGender"
@@ -93,6 +93,27 @@
             />
 
     </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        android:id="@+id/txtAge"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/edtAge"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/edtAge" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/edtAge"
+        android:textSize="20sp"
+        android:layout_below="@+id/radGrpGender"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>

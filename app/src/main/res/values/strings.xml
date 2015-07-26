@@ -4,10 +4,10 @@
     <string name="HRM_SET_UP">HRM Set Up</string>
     <string name="Emergency_Help">Emergency</string>
     <string name="title_activity_hrm_setup">HRM_SETUP</string>
-    <string name="height">Height</string>
-    <string name="weight">Weight</string>
-    <string name="age">Age</string>
-    <string name="gender">Gender</string>
+    <string name="height">Height:</string>
+    <string name="weight">Weight:</string>
+    <string name="age">Age:</string>
+    <string name="gender">Gender:</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="hint_height">(cm)</string>
